@@ -13,14 +13,13 @@ namespace Task0002
 
             var myResult1 = OutputArray(exampleInput1);
             var myResult2 = OutputArray(exampleInput2);
-            
+
             PrintResult(myResult1);
             PrintResult(myResult2);
         }
 
         public static int[] OutputArray(int[] numbers)
         {
-
             var newArray = new int[numbers.Length];
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -37,7 +36,7 @@ namespace Task0002
 
                 newArray[i] = tmpNumber;
             }
-            
+
             return newArray;
         }
 
@@ -45,7 +44,7 @@ namespace Task0002
         {
             StringBuilder sb = new StringBuilder();
             sb.Append('[');
-            for (int i =0; i < numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
                 var result = numbers.Length - 1 == i ? $"{numbers[i]}" : $"{numbers[i]}, ";
                 sb.Append(result);

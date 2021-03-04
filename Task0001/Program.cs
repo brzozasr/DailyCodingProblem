@@ -8,14 +8,14 @@ namespace Task0001
         {
             int[] numbers = new[] {10, 15, 3, 7};
             int k = 17;
-            var result = HasNumbers(numbers,k);
+            var result = HasNumbers(numbers, k);
             Console.WriteLine($"Result: {result}");
         }
 
         private static bool HasNumbers(int[] numbers, int k)
         {
             int? tmp = null;
-            
+
             for (int i = 0; i < numbers.Length; i++)
             {
                 for (int j = i + 1; j < numbers.Length; j++)
